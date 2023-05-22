@@ -1,16 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
     	<title>CEU - Centro Unificado Educacional Parque Bristol</title>
     	<meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<link rel="stylesheet" href="ceu_estilo.css">
+    	<link rel="stylesheet" href="{% static '/styles/ceu_estilo.css' %}">
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=poppins">
 	</head>
 	<body>
 		<div id="principal-div">
 			<div id="principal-logo-div">
-				<img src="img/logo_ceu_redondo.png">
+				<img src="{% static '/assets/img/logo_ceu_redondo.png' %}">
 			</div>
 			
 			<div id="principal-login-div">

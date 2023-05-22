@@ -1,12 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 	<head>
     	<title>CEU - Centro Unificado Educacional Parque Bristol</title>
     	<meta charset="UTF-8">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<link rel="stylesheet" href="ceu_estilo.css">
-		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=poppins">
-		<script src="validacao.js"></script>	
+    	<link rel="stylesheet" href="{% static '/styles/ceu_estilo.css' %}">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=poppins">	
 	</head>
 	<body>
 		<div id="wrapper-div">
@@ -14,11 +14,11 @@
 			<div id="topo-div">
 				<!-- Logo -->
 				<div id="topo-logo-div">
-					<img src="img/logo_ceu_retangular.png">
+					<img src="{% static '/assets/img/logo_ceu_retangular.png' %}">
 				</div>
 				<div id="topo-config-div">
-					<span class="baixo-esq"><img src="img/icone_home.png">&nbsp;/ Criar usuário ( Endereço ) > Passo 2 de 4</span>
-		  			<span class="alto-dir"><a href="#"><img src="img/icone_config.png"></a><a href="#"><img src="img/icone_sair.png"></a></span>
+					<span class="baixo-esq"><img src="{% static '/assets/img/icone_home.png' %}">&nbsp;/ Criar usuário ( Endereço ) > Passo 2 de 4</span>
+					<span class="alto-dir"><a href="#"><img src="{% static '/assets/img/icone_config.png' %}"></a><a href="#"><img src="{% static '/assets/img/icone_sair.png' %}"></a></span>
 				</div>
 			</div>		
 
@@ -26,8 +26,8 @@
 				<!-- Menu -->
 				<div id="main-menu-div">					
 					<nav>
-						<a href="#" class="menu"><img src="img/btn_criar_usuario.png"></a>
-						<a href="#" class="menu"><img src="img/btn_buscar_usuario.png"></a>
+						<a href="#" class="menu"><img src="{% static '/assets/img/btn_criar_usuario.png' %}"></a>
+						<a href="#" class="menu"><img src="{% static '/assets/img/btn_buscar_usuario.png' %}"></a>
 					</nav>
 				</div>
 				
