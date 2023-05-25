@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
 def buscarUsuario(request):
-    return render(request, 'buscar_usuario.html')
+    return render(request, 'buscarUsuario/buscar_usuario.html')

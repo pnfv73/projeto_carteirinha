@@ -15,9 +15,14 @@
 			</div>
 			
 			<div id="principal-login-div">
-
+				{% if messages %}
+					{% for message in messages %}
+				  	<span class="botao_grande">{{ message|safe }}</span>
+					{% endfor %}
+			  	{% endif %}				
 				<!-- Formulário: Login -->
-				<form action="#">
+				<form action="" method="post">
+					{% csrf_token %}
 					<fieldset>
 						<legend class="fonte_grande">Login</legend>
 						<p class="fonte_pequena">Preencha os campos abaixo e acesse a sua conta.</p>
@@ -31,7 +36,7 @@
 						<input type="submit" value="Entrar" class="botao_grande">
 					</fieldset>
 				</form>
-				<p class="fonte_media">Não cadastrado? <a href="#"><b>Crie sua conta</b></a></p>
+				<p class="fonte_media">Não cadastrado? <a href="{% url 'cadastro_funcionario' %}"><b>Crie sua conta</b></a></p>
 
 			</div>
 

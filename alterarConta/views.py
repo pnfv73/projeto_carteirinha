@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
 def alterarConta(request):
-    return render(request, 'alterar_conta.html')
+    return render(request, 'alterarConta/alterar_conta.html')

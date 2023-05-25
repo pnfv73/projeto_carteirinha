@@ -7,6 +7,14 @@
     box-sizing:border-box;
 }
 
+.alerta {
+    font-size:12px;
+    font-weight:bold;
+    color:#ff0000;
+    background-color:#ffff00;
+    padding:8px;
+}
+
 body {
     -ms-box-orient:horizontal;
     display:-webkit-box;
