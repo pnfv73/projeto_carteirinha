@@ -98,15 +98,27 @@
 				</div>
 			</div>				
 		</div>
+		<!--<script>
+		  document.getElementById("form-busca").addEventListener("keyup", function(event) {
+			if (event.key === "Enter") {
+			  event.preventDefault();
+			  var form = document.getElementById("form-busca");
+			  var busca = form.elements.busca.value;
+			  window.location.href = "/buscarUsuario?busca" + encodeURIComponent(busca);
+			}
+		  });
+		</script> -->		
+]
 		<script>
 		  document.getElementById("form-busca").addEventListener("keyup", function(event) {
 			if (event.key === "Enter") {
 			  event.preventDefault();
 			  var form = document.getElementById("form-busca");
 			  var busca = form.elements.busca.value;
-			  window.location.href = "/buscar_usuario?busca" + encodeURIComponent(busca);
+			  console.log(window.location.href + "?busca=" + encodeURIComponent(busca));
 			}
 		  });
-		</script>					
+		</script>
+		
 	</body>
 </html>
